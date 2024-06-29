@@ -1,0 +1,11 @@
+
+
+
+all: planner_exe
+
+planner_exe:
+	g++ arm_planner_util.cpp rrt-star.cpp planner.cpp -o planner.exe
+
+run:
+#	planner.exe map1.txt 5 1.57,0.78,1.57,0.78,1.57 0.392,2.35,3.14,2.82,4.71 2 myOutput.txt
+	planner.exe map1.txt 5 1.57,0.78,1.57,0.78,1.57 0.22,1.92,2.96,2.43,5.47 2 myOutput.txt

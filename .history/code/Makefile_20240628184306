@@ -1,0 +1,7 @@
+
+
+
+all: planner_obj
+
+planner_obj:
+	g++ arm_planner_util.cpp rrt-star.cpp planner.cpp -o planner.o
